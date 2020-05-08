@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <title> WEB1- JavaScrpit </title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            margin:0;
+        }
+        a {
+            color:black; 
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px
+        }
+        #active {
+            color:red;
+        }
+        
+        #article{
+            padding:25px;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color='black';
+    ">
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="1.html">HTML</a></li>
+        <li role="presentation"><a href="2.html">CSS</a></li>
+        <li role="presentation" class="active"><a href="3.html">JavaScrpit</a></li>
+    </ul>
+        
+        <div id="article">
+            <h2>JavaScrpit</h2>
+            <p> JavaScript란 ~</p>
+                
+        </div>
+    
+</body> 
+</html>
